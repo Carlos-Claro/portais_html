@@ -1,0 +1,31 @@
+.sidenav {
+  width: 80%;
+}
+
+@media (max-width: 500px) {
+  nav .brand-logo {
+    font-size: 1.5rem;
+  }
+
+  img.logo {
+    margin: 6px auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .brand-logo {
+    font-size: 1.8rem;
+  }
+
+  img.logo {
+    margin: 9px auto;
+  }
+}
+
+@media (max-width: 992px) {
+  nav .brand-logo {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}

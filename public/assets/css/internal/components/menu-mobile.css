@@ -1,0 +1,10 @@
+.menu-mobile {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+}
+
+.menu-mobile .botao-menu {
+  width: 30%;
+}

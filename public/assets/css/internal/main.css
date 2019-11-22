@@ -1,0 +1,24 @@
+@import 'base/margin.css';
+@import 'base/padding.css';
+@import 'base/fonts.css';
+
+@import 'layout/navigation.css';
+
+@import 'components/lista.css';
+@import 'components/menu-mobile.css';
+
+@import 'vendors/material-icons';
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.input-field .top {
+  top: 1.8rem !important;
+}
