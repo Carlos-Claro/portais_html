@@ -9,4 +9,6 @@ document.addEventListener('DOMContentLoaded', function(){
   var carousel = M.Carousel.init(elemCarousel, {
     fullWidth: true
   });
+
+  M.updateTextFields();
 });
