@@ -5,10 +5,11 @@ document.addEventListener('DOMContentLoaded', function(){
   var elemSelect = document.querySelectorAll('select');
   var select = M.FormSelect.init(elemSelect);
 
-  var elemCarousel = document.querySelectorAll('.carousel');
-  var carousel = M.Carousel.init(elemCarousel, {
-    fullWidth: true
-  });
+  var elemModal = document.querySelectorAll('.modal');
+  var modal = M.Modal.init(elemModal);
 
   M.updateTextFields();
+
+  var elemContador = document.querySelectorAll('#mensagem');
+  var contador = M.CharacterCounter.init(elemContador);
 });

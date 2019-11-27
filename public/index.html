@@ -4,18 +4,16 @@
     <title>Imóveis a Venda em São José dos Pinhais</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/external/materialize.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/internal/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script type="text/javascript" src="assets/js/external/materialize.js"></script>
-    <script type="text/javascript" src="assets/js/internal/principal.js"></script>
   </head>
   <body>
     <header>
       <div class="navbar-fixed">
         <nav class="white">
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><img src="assets/img/logo/logo.png" alt="Logo" class="my-1 mx-auto logo"></a>
+            <a href="index.html" class="brand-logo"><img src="assets/img/logo/logo.png" alt="Logo" class="my-1 mx-auto logo"></a>
             <a href="#" data-target="mobile" class="sidenav-trigger">
               <i class="material-icons blue-text text-darken-4">menu</i>
             </a>
@@ -28,7 +26,7 @@
                 <a href="#" class="blue-text text-darken-4">IMOBILIÁRIAS</a>
               </li>
               <li>
-                <a href="#" class="blue-text text-darken-4">NÃO ENCONTREI</a>
+                <a href="nao_encontrei.html" class="blue-text text-darken-4">NÃO ENCONTREI</a>
               </li>
               <li>
                 <a href="#" class="blue-text text-darken-4">LINKS IMPORTANTES</a>
@@ -53,7 +51,7 @@
           <a href="#" class="blue-text text-darken-4 f-bold">IMOBILIÁRIAS</a>
         </li>
         <li>
-          <a href="#" class="blue-text text-darken-4 f-bold">NÃO ENCONTREI</a>
+          <a href="nao_encontrei.html" class="blue-text text-darken-4 f-bold">NÃO ENCONTREI</a>
         </li>
         <li>
           <a href="#" class="blue-text text-darken-4 f-bold">LINKS IMPORTANTES</a>
@@ -69,21 +67,20 @@
           <a href="#" class="sidenav-close"><i class="material-icons left blue-text text-darken-4">close</i></a>
         </li>
         <li class="row">
-          <form class="col s10 offset-s1">
+          <form class="form-escuro col s10 offset-s1">
             <div class="row">
               <div class="input-field col s12">
-                <input type="text" name="localidade" id="localidade">
-                <label for="localidade">Localidade</label>
+                <input type="text" name="localidade" id="localidade" class="validate">
+                <label for="localidade" class="active">Localidade</label>
               </div>
               <div class="input-field col s12">
                 <select name="tipo" id="tipo">
-                  <option value="" disabled selected>Escolha um tipo de imóvel...</option>
+                  <option disabled selected>Escolha um tipo de imóvel...</option>
                   <option value="apartamento">Apartamento</option>
                   <option value="casa">Casa</option>
                   <option value="kitinete">Kitinete</option>
                   <option value="sobrado">Sobrado</option>
                 </select>
-                <label for="tipo">Tipo do imóvel</label>
               </div>
               <div class="input-field col s12 condominio-check my-0 mx-auto">
                 <p class="my-0 mx-auto">
@@ -95,28 +92,28 @@
               </div>
               <div class="input-field col s6">
                 <i class="material-icons md-18 prefix top">attach_money</i>
-                <input type="text" name="preco_minimo" id="preco_minimo">
-                <label for="preco_minimo">Preço mínimo</label>
+                <input type="text" name="preco_minimo" id="preco_minimo" class="validate">
+                <label for="preco_minimo" class="active">Preço mínimo</label>
               </div>
               <div class="input-field col s6">
                 <i class="material-icons md-18 prefix top">attach_money</i>
-                <input type="text" name="preco_maximo" id="preco_maximo">
-                <label for="preco_maximo">Preço máximo</label>
+                <input type="text" name="preco_maximo" id="preco_maximo" class="validate">
+                <label for="preco_maximo" class="active">Preço máximo</label>
               </div>
               <div class="input-field col s6">
                 <i class="material-icons md-18 prefix top">terrain</i>
-                <input type="text" name="area_minima" id="area_minima">
-                <label for="area_minima">Área mínima</label>
+                <input type="text" name="area_minima" id="area_minima" class="validate">
+                <label for="area_minima" class="active">Área mínima</label>
               </div>
               <div class="input-field col s6">
                 <i class="material-icons md-18 prefix top">terrain</i>
-                <input type="text" name="area_maxima" id="area_maxima">
-                <label for="area_maxima">Área máxima</label>
+                <input type="text" name="area_maxima" id="area_maxima" class="validate">
+                <label for="area_maxima" class="active">Área máxima</label>
               </div>
               <div class="input-field col s12">
                 <p>
                   <label>
-                    <span>Quartos</span>
+                    <span class="fs-14">Quartos</span>
                   </label>
                 </p>
                 <p>
@@ -149,7 +146,7 @@
                 </p>
                 <p>
                   <label>
-                    <span>Banheiros</span>
+                    <span class="fs-14">Banheiros</span>
                   </label>
                 </p>
                 <p>
@@ -182,7 +179,7 @@
                 </p>
                 <p>
                   <label>
-                    <span>Vagas</span>
+                    <span class="fs-14">Vagas</span>
                   </label>
                 </p>
                 <p>
@@ -226,6 +223,7 @@
         <h1 class="fs-20 f-bold blue-text text-darken-4 mt-2 mb-0 ml-2">IMÓVEIS A VENDA EM SÃO JOSÉ DOS PINHAIS</h1>
         <h2 class="fs-16 f-bold mt-0 mb-2 ml-2">3891 Imóveis encontrados</h2>
       </section>
+      <!-- Primeiro imóvel da lista -->
       <section class="lista-imovel z-depth-2 p-1">
         <div class="carousel carousel-slider">
             <a class="carousel-item" href="#one!"><img src="https://images.portaisimobiliarios.com.br/portais/7695/1941477/vitrine_1941477_29428552.jpg"></a>
@@ -257,6 +255,40 @@
           </div>
         </div>
       </section>
+      <!-- Fim primeiro imóvel -->
+      <!-- Segundo imóvel da lista -->
+      <section class="lista-imovel z-depth-2 p-1">
+        <div class="carousel carousel-slider">
+            <a class="carousel-item" href="#one!"><img src="https://images.portaisimobiliarios.com.br/portais/7695/1941477/vitrine_1941477_29428552.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="https://images.portaisimobiliarios.com.br/portais/7695/1941477/vitrine_1941477_29428554.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="https://images.portaisimobiliarios.com.br/portais/7695/1941477/vitrine_1941477_29428553.jpg"></a>
+        </div>
+        <div class="corpo-lista">
+          <h1 class="indigo-text darken-3 titulo-imovel fs-16 f-bold mb-0">Sobrado 3 quartos à venda 112m²</h1>
+          <small>Boa Vista, Curitiba - Paraná</small>
+          <p class="lista-descricao mb-0 justify-align">Sobrado residencial com 113m² + 53m² de garagem e quintal, 3 quartos sendo 1 suíde sala de estar e jantar, cozinha e banheiro social.</p>
+          <div class="row">
+            <div class="col s6">
+              <p class="preco-locacao mb-0"><b>Locação</b> R$700,00</p>
+              <p class="preco-venda mt-0"><b>Venda</b> R$350.000,00</p>
+            </div>
+            <div class="col s6">
+              <p class="codigo-pi right"><b>Código PI</b> 2111685</p>
+            </div>
+          </div>
+          <div class="row mb-0">
+            <div class="col s4"><i class="material-icons left">airline_seat_individual_suite</i><p class="infos">3 quartos</p></div>
+            <div class="col s4"><i class="material-icons left">wc</i><p class="infos">2 banheiros</p></div>
+            <div class="col s4"><i class="material-icons left">directions_car</i><p class="infos">1 vaga</p></div>
+          </div>
+          <div class="buttons mt-1">
+            <a class="waves-effect waves-light indigo darken-3 btn-small fs-10"><i class="material-icons left">open_in_new</i>Detalhes</a>
+            <a class="waves-effect waves-light red darken-4 btn-small fs-10"><i class="material-icons left">star_border</i>Favorito</a>
+            <a class="waves-effect waves-light teal darken-4 btn-small fs-10"><i class="material-icons left">cloud</i>WhatsApp</a>
+          </div>
+        </div>
+      </section>
+      <!-- Fim segundo imóvel -->
       <div class="fixed-action-btn">
         <a href="#" data-target="filtro" class="btn-floating btn-large blue darken-4 sidenav-trigger">
           <i class="material-icons left red">search</i>
@@ -292,5 +324,7 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="assets/js/external/materialize.js"></script>
+    <script type="text/javascript" src="assets/js/internal/principal.js"></script>
   </body>
 </html>
