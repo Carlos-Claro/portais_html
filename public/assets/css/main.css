@@ -487,10 +487,6 @@
   padding: 50px !important;
 }
 
-.p-auto {
-  padding: auto !important;
-}
-
 /* Espaçamento no topo */
 .pt-0 {
   padding-top: 0 !important;
@@ -514,10 +510,6 @@
 
 .pt-5 {
   padding-top: 50px !important;
-}
-
-.pt-auto {
-  padding-top: auto !important;
 }
 
 /* Espaçamento em baixo */
@@ -545,10 +537,6 @@
   padding-bottom: 50px !important;
 }
 
-.pb-auto {
-  padding-bottom: auto !important;
-}
-
 /* Espaçamento na esquerda */
 .pl-0 {
   padding-left: 0 !important;
@@ -574,10 +562,6 @@
   padding-left: 50px !important;
 }
 
-.pl-auto {
-  padding-left: auto !important;
-}
-
 /* Espaçamento na direita */
 .pr-0 {
   padding-right: 0 !important;
@@ -601,10 +585,6 @@
 
 .pr-5 {
   padding-right: 50px !important;
-}
-
-.pr-auto {
-  padding-right: auto !important;
 }
 
 /* Espaçamento em cima e baixo */
@@ -638,11 +618,6 @@
   padding-bottom: 50px !important;
 }
 
-.py-auto {
-  padding-top: auto !important;
-  padding-bottom: auto !important;
-}
-
 /* Espaçamento na direita e esquerda */
 .px-0 {
   padding-left: 0 !important;
@@ -659,7 +634,7 @@
   padding-right: 20px !important;
 }
 
-.p-3 {
+.px-3 {
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
@@ -672,11 +647,6 @@
 .px-5 {
   padding-left: 50px !important;
   padding-right: 50px !important;
-}
-
-.px-auto {
-  padding-left: auto !important;
-  padding-right: auto !important;
 }
 
 /* Cor de fundo transparente */
@@ -1537,4 +1507,10 @@ main {
     margin: 0 !important;
     padding: 0 !important;
   }
+}
+
+/* Página imobiliárias */
+.imobiliaria {
+  border: 1px solid rgba(0, 0, 0, 0.87);
+  border-radius: 5px;
 }
